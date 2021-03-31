@@ -110,4 +110,16 @@ class User extends CI_Controller
             }
         }
     }
+
+    public function templates()
+    {
+        $data['title'] = 'Templates';
+        $data['user'] = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
+
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/sidebar', $data);
+        $this->load->view('templates/topbar', $data);
+        $this->load->view('user/templates', $data);
+        $this->load->view('templates/footer');
+    }
 }
