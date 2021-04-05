@@ -322,7 +322,7 @@
         </div>
 
       </div>
-      <center><a href="<?= base_url('home/templates'); ?>" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a></center>
+      <center><a href="<?= base_url('templates'); ?>" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a></center>
     </div>
   </section><!-- End Portfolio Section -->
 
