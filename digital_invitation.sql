@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 4.9.5
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Waktu pembuatan: 27 Mar 2021 pada 17.23
--- Versi server: 10.4.17-MariaDB
+-- Host: localhost:3306
+-- Waktu pembuatan: 20 Apr 2021 pada 10.26
+-- Versi server: 10.3.28-MariaDB-cll-lve
 -- Versi PHP: 7.3.27
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -18,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `wpu_login`
+-- Database: `deniekap_skpbandung`
 --
 
 -- --------------------------------------------------------
@@ -36,14 +37,14 @@ CREATE TABLE `user` (
   `role_id` int(11) NOT NULL,
   `is_active` int(1) NOT NULL,
   `date_created` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data untuk tabel `user`
 --
 
 INSERT INTO `user` (`id`, `name`, `email`, `image`, `password`, `role_id`, `is_active`, `date_created`) VALUES
-(18, 'deni', 'deniekapratama07@gmail.com', 'default.jpg', '$2y$10$ZiPCO1edyCbcn4d96E2j2.x8pZR/1df/WHlCcwJNj8cUJHldjQC6e', 1, 1, 1616857507),
+(18, 'deni', 'deniekapratama07@gmail.com', 'Makrab_MI_VIB_7916.jpg', '$2y$10$ZiPCO1edyCbcn4d96E2j2.x8pZR/1df/WHlCcwJNj8cUJHldjQC6e', 1, 1, 1616857507),
 (19, 'Eka', 'deniekapratama05@gmail.com', 'default.jpg', '$2y$10$PYv5W3msZJU99.vftxcTRePJLiq4FzNeF.D9iJ3e6vPla9e0aXyme', 2, 1, 1616859914);
 
 -- --------------------------------------------------------
@@ -56,7 +57,7 @@ CREATE TABLE `user_access_menu` (
   `id` int(11) NOT NULL,
   `role_id` int(11) NOT NULL,
   `menu_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data untuk tabel `user_access_menu`
@@ -77,7 +78,7 @@ INSERT INTO `user_access_menu` (`id`, `role_id`, `menu_id`) VALUES
 CREATE TABLE `user_menu` (
   `id` int(11) NOT NULL,
   `menu` varchar(128) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data untuk tabel `user_menu`
@@ -97,7 +98,7 @@ INSERT INTO `user_menu` (`id`, `menu`) VALUES
 CREATE TABLE `user_role` (
   `id` int(11) NOT NULL,
   `role` varchar(128) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data untuk tabel `user_role`
@@ -120,7 +121,7 @@ CREATE TABLE `user_sub_menu` (
   `url` varchar(128) NOT NULL,
   `icon` varchar(128) NOT NULL,
   `is_active` int(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data untuk tabel `user_sub_menu`
@@ -147,7 +148,7 @@ CREATE TABLE `user_token` (
   `email` varchar(128) NOT NULL,
   `token` varchar(128) NOT NULL,
   `date_created` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data untuk tabel `user_token`
@@ -212,7 +213,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT untuk tabel `user_access_menu`
 --
 ALTER TABLE `user_access_menu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT untuk tabel `user_menu`

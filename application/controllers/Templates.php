@@ -23,7 +23,6 @@ class Templates extends CI_Controller
 	{
 		$this->load->view('templates');
 		$this->load->view('templates_frontend/header');
-		$this->load->view('templates_frontend/menus');
 		$this->load->view('templates_frontend/footer');
 	}
 
