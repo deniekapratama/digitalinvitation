@@ -29,20 +29,20 @@
 <div id="preloader"></div>
 
 <!-- Vendor JS Files -->
-<script src="assetss/vendor/jquery/jquery.min.js"></script>
-<script src="assetss/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assetss/vendor/jquery.easing/jquery.easing.min.js"></script>
-<script src="assetss/vendor/php-email-form/validate.js"></script>
-<script src="assetss/vendor/waypoints/jquery.waypoints.min.js"></script>
-<script src="assetss/vendor/counterup/counterup.min.js"></script>
-<script src="assetss/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="assetss/vendor/venobox/venobox.min.js"></script>
-<script src="assetss/vendor/owl.carousel/owl.carousel.min.js"></script>
-<script src="assetss/vendor/typed.js/typed.min.js"></script>
-<script src="assetss/vendor/aos/aos.js"></script>
+<script src="<?= base_url(''); ?>assetss/vendor/jquery/jquery.min.js"></script>
+<script src="<?= base_url(''); ?>assetss/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="<?= base_url(''); ?>assetss/vendor/jquery.easing/jquery.easing.min.js"></script>
+<script src="<?= base_url(''); ?>assetss/vendor/php-email-form/validate.js"></script>
+<script src="<?= base_url(''); ?>assetss/vendor/waypoints/jquery.waypoints.min.js"></script>
+<script src="<?= base_url(''); ?>assetss/vendor/counterup/counterup.min.js"></script>
+<script src="<?= base_url(''); ?>assetss/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="<?= base_url(''); ?>assetss/vendor/venobox/venobox.min.js"></script>
+<script src="<?= base_url(''); ?>assetss/vendor/owl.carousel/owl.carousel.min.js"></script>
+<script src="<?= base_url(''); ?>assetss/vendor/typed.js/typed.min.js"></script>
+<script src="<?= base_url(''); ?>assetss/vendor/aos/aos.js"></script>
 
 <!-- Template Main JS File -->
-<script src="assetss/js/main.js"></script>
+<script src="<?= base_url(''); ?>assetss/js/main.js"></script>
 
 </body>
 

@@ -22,7 +22,6 @@
       </div>
 
       <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="portfolio-wrap">
             <img src="<?= base_url('assetss'); ?>/img/undangan/1.jpg" class="img-fluid" alt="">
@@ -30,7 +29,7 @@
               <h4>App 1</h4>
               <p>App</p>
               <div class="portfolio-links">
-                <a href="<?= base_url('assetss'); ?>/img/undangan/1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/undangan/1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
