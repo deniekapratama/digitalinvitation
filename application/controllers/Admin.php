@@ -21,7 +21,6 @@ class Admin extends CI_Controller
         $this->load->view('templates/footer');
     }
 
-
     public function role()
     {
         $data['title'] = 'Role';
@@ -35,7 +34,6 @@ class Admin extends CI_Controller
         $this->load->view('admin/role', $data);
         $this->load->view('templates/footer');
     }
-
 
     public function roleAccess($role_id)
     {
@@ -53,7 +51,6 @@ class Admin extends CI_Controller
         $this->load->view('admin/role-access', $data);
         $this->load->view('templates/footer');
     }
-
 
     public function changeAccess()
     {
